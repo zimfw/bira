@@ -12,7 +12,9 @@ What does it show?
     * username@hostname
     * Working directory.
     * Current git branch name, or commit short hash when in ['detached HEAD' state].
+      Also an indicator when in a dirty working tree.
     * Python [venv] indicator.
+    * `#` when root, `$` otherwise.
   * On the right:
     * Status code when there was an error.
 
