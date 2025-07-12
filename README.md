@@ -24,11 +24,11 @@ Advanced settings
 The git indicators can be customized by changing the following git-info module
 context formats:
 
-| Context name | Description       | Default format       |
-| ------------ | ----------------- | -------------------- |
-| branch       | Branch name       | `%b`                 |
-| commit       | Commit short hash | `%c`                 |
-| dirty        | Dirty state       | `%F{red}●%F{yellow}` |
+| Context name | Description       | Default format             |
+| ------------ | ----------------- | -------------------------- |
+| branch       | Branch name       | `%b`                       |
+| commit       | Commit short hash | `%c`                       |
+| dirty        | Dirty state       | `%F{red}%{%G●%}%F{yellow}` |
 
 Use the following command to override a git-info context format:
 
