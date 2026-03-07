@@ -9,7 +9,7 @@ What does it show?
 ------------------
 
   * On the left:
-    * username@hostname
+    * `username@hostname`
     * Working directory.
     * Current git branch name, or commit short hash when in ['detached HEAD' state].
       Also an indicator when in a dirty working tree.
@@ -37,12 +37,14 @@ Use the following command to override a git-info context format:
 For detailed information about these and other git-info settings, check the
 [git-info documentation].
 
-These advanced settings must be overridden after the theme is initialized.
+These advanced settings must be defined at the bottom of your `~/.zshrc`, after
+the modules are initialized with `source ${ZIM_HOME}/init.zsh`, in order to
+override the theme defaults.
 
 Requirements
 ------------
 
-Requires Zim's [git-info] module to show git information.
+Requires Zim Framework's [git-info] module to show git information.
 
 [bira]: https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/bira.zsh-theme
 ['detached HEAD' state]: https://git-scm.com/docs/git-checkout#_detached_head
