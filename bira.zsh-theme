@@ -12,7 +12,7 @@ if (( ${+functions[git-info]} )); then
   zstyle ':zim:git-info:dirty' format '%F{red}%{%G●%}%F{yellow}'
   zstyle ':zim:git-info:keys' format \
       'prompt' ' %F{yellow}%{%G‹%}%b%c%D%{%G›%}'
-  add-zsh-hook precmd git-info
+  autoload -Uz add-zsh-hook && add-zsh-hook precmd git-info
 fi
 
 PS1='%{%G╭%}%{%G─%}%B%(!.%F{red]}.%F{green})%n@%m %F{blue}%~${(e)git_info[prompt]}${VIRTUAL_ENV:+" %F{green}%{%G‹%}${VIRTUAL_ENV:t}%{%G›%}"}%f%b
